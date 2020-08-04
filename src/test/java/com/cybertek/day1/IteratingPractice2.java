@@ -12,6 +12,7 @@ public class IteratingPractice2 {
 
 		ResultSet rs = stmnt.executeQuery("Select * from countries where region_id = 1");
 
-
+		rs.next();
+		System.out.println(rs.getString("Country_id") + " " + "Country_name");
 	}
 }
